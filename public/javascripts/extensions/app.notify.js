@@ -1,5 +1,0 @@
-app.notify = {
-    NotifyController: function(){
-
-    }
-}
