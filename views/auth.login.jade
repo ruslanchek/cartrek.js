@@ -1,0 +1,41 @@
+extends layouts/auth
+
+block content
+    .login
+        .login-screen
+            .login-icon
+                img(src='/flat-ui/images/icons/box.svg', alt='Welcome to App')
+                h4 Welcome to
+                    small Demo App
+
+            .login-form
+                form#form-login(action='/auth/login', method='post')
+                    .form-message
+
+                    .form-inputs
+                        .form-group
+                            input#username.form-control.login-field(type='text', name='username', value='', placeholder='Enter your name')
+                            label.login-field-icon.fui-user(for='username')
+                        .form-group
+                            input#password.form-control.login-field(type='password', name='password', value='', placeholder='Password')
+                            label.login-field-icon.fui-lock(for='password')
+
+                        input.btn.btn-primary.btn-lg.btn-block(type='submit', value='Login')
+
+                    div.login-links
+                        a.login-link(href='/auth/password-recovery') Lost password?
+                        a.login-link(href='/auth/sign-up') Sign up by e-mail
+
+                    .social
+                        a.btn.btn-social-facebook(href='/auth/facebook', title='Login with Facebook')
+                            i.fui-facebook
+
+                        a.btn.btn-social-twitter(href='/auth/twitter', title='Login with Twitter')
+                            i.fui-twitter
+
+                        a.btn.btn-social-pinterest(href='/auth/google', title='Login with Google')
+                            i.fui-googleplus
+
+                        a.btn.btn-.btn-info(href='/auth/vkontakte', title='Login with VK') Vk
+
+                        a.btn.btn-small.btn-danger(href='/auth/yandex', title='Login with Yandex') Ya

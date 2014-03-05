@@ -1,0 +1,45 @@
+{
+    "protocol": "http",
+    "domain_name": "control2.cartrek.ru",
+    "port": 3000,
+    "session_secret": "asdf324324234jkhsakd",
+    "session_time": 36000000,
+
+    "mongoose": {
+        "development": "mongodb://localhost/cartrek",
+		"production": "mongodb://localhost/cartrek"
+    },
+
+    "redis": {
+        "development": {
+            "host": "127.0.0.1",
+            "port": "6379"
+        },
+        "production": {
+            "host": "127.0.0.1",
+            "port": "6379"
+        }
+    },
+	
+    "oauth": {
+        "facebook": {
+            "clientID": "123",
+            "clientSecret": "123"
+        },
+
+        "twitter": {
+            "consumerKey": "123",
+            "consumerSecret": "123"
+        },
+
+        "vk": {
+            "clientID": "123",
+            "clientSecret": "123"
+        },
+
+        "yandex": {
+            "clientID": "123",
+            "clientSecret": "123"
+        }
+    }
+}
