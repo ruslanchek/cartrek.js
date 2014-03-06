@@ -91,9 +91,9 @@
 			clearTimeout($slimResize);
 			$slimResize = setTimeout(function(){$self.slimScroll($data);}, 500);
 		});
-    $(document).on('updateNav', function(){
-      $self.slimScroll($data);
-    });
+        $(document).on('updateNav', function(){
+
+        });
 	});	
 
 	// portlet

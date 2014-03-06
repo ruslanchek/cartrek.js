@@ -68,7 +68,7 @@ module.exports = function (app, controllers) {
             }
         });
 
-        res.render('auth.login.jade', params);
+        res.render('auth.login.html', params);
     });
 
 
@@ -122,7 +122,7 @@ module.exports = function (app, controllers) {
             }
         });
 
-        res.render('auth.password-recovery.jade', params);
+        res.render('auth.password-recovery.html', params);
     });
 
 
@@ -139,7 +139,7 @@ module.exports = function (app, controllers) {
                 }
             });
 
-            res.render('auth.password-recovery-code.jade', params);
+            res.render('auth.password-recovery-code.html', params);
         });
     });
 
@@ -165,7 +165,7 @@ module.exports = function (app, controllers) {
             }
         });
 
-        res.render('auth.sign-up.jade', params);
+        res.render('auth.sign-up.html', params);
     });
 
 

@@ -23,7 +23,6 @@ app.utils           = require('./libs/utils');
 app.mongoose        = require('./libs/mongoose')(app);
 app.redis           = require('./libs/redis')(app);
 
-console.log(app.config.get('oauth:facebook:clientID'));
 
 /**
  * Models

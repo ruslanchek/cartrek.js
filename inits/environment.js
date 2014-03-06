@@ -1,4 +1,5 @@
-var path = require('path');
+var path = require('path'),
+    swig = require('swig');
 
 module.exports = function(app, express){
     app.log.info('Current environment:', app.get('env'));
@@ -8,8 +9,21 @@ module.exports = function(app, express){
      * */
     app.set('port', process.env.PORT || app.config.get('port'));
     app.set('views', path.join(__dirname, '../views'));
-    app.set('view engine', 'jade');
+    app.set('view engine', 'html');
+
+    app.engine('html', swig.renderFile);
+
+    if(app.get('env') == 'production'){
+        swig.setDefaults({ cache: true });
+        app.set('view cache', true);
+    }else{
+        swig.setDefaults({ cache: false });
+        app.set('view cache', false);
+    }
+
     app.set('project_uri', app.config.get('protocol') + '://' + app.config.get('domain_name'));
+
+    app.use(express.favicon());
 
     /**
      * Development

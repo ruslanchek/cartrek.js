@@ -1,0 +1,47 @@
+{% extends 'layouts/main.html' %}
+
+{% block content %}
+	<script type="text/x-handlebars">
+		<section class="vbox">
+			{% include 'common/header.html' %}
+
+			<section id="h-container">
+				<section class="hbox stretch">
+					{% include 'common/aside.html' %}
+
+					<section id="content">
+						<section class="vbox">
+							<header class="header bg-white b-b b-light">
+								<p>This is a header</p>
+							</header>
+
+							<section>
+								<section class="hbox stretch">
+									<section>
+										<section class="vbox">
+											<section class="scrollable wrapper">
+												{% raw %}{{outlet}}{% endraw %}
+											</section>
+										</section>
+									</section>
+								</section>
+							</section>
+
+							{% include 'common/footer.html' %}
+						</section>
+
+						<a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen" data-target="#nav"></a>
+					</section>
+				</section>
+			</section>
+		</section>
+	</script>
+
+	<script type="text/x-handlebars" id="index">
+		{% include 'sections/main.html' %}
+	</script>
+
+	<script type="text/x-handlebars" id="about">
+		{% include 'sections/about.html' %}
+	</script>
+{% endblock %}

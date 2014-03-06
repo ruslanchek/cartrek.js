@@ -50,7 +50,6 @@ module.exports = function (app, models) {
 
                     new_user.save(function (err, user) {
                         if (err) {
-                            console.log(err)
                             app.log.error('User save error', err);
 
                             return done(err);

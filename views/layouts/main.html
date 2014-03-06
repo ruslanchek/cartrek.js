@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="app">
+<head>
+    <title>{{ metadata.title }}</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta charset="utf-8"/>
+
+    <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/animate.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/icon.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/font.css" type="text/css" />
+    <link rel="stylesheet" href="js/calendar/bootstrap_calendar.css" type="text/css" />
+
+    <link href="/stylesheets/app.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/respond.min.js"></script>
+	<script src="js/ie/excanvas.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	{% block content %}
+
+	{% endblock %}
+
+    <!-- Libs-->
+    <script src="/javascripts/libs/jquery.min.js"></script>
+    <script src="/javascripts/libs/jquery-ui.min.js"></script>
+    <script src="/javascripts/libs/handlebars.min.js"></script>
+    <script src="/javascripts/libs/ember.js"></script>
+	<script src="/javascripts/libs/moment.min.js"></script>
+
+    <!-- Plugins-->
+    <script src="/javascripts/plugins/meow/jquery.meow.js"></script>
+    <script src="/javascripts/plugins/stupid-table/stupid-table.min.js"></script>
+    <script src="/javascripts/plugins/masked-input/masked-input.min.js"></script>
+    <script src="/javascripts/plugins/numeral/numeral.min.js"></script>
+    <script src="/javascripts/plugins/numeral/languages.min.js"></script>
+	<script src="/javascripts/plugins/numeral/languages.min.js"></script>
+	<script src="/javascripts/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Important! Do not change the order!-->
+    <script src="/javascripts/app.js"></script>
+
+    <!-- App extensions-->
+    <script src="/javascripts/extensions/app.utils.js"></script>
+    <script src="/javascripts/extensions/app.loading.js"></script>
+    <script src="/javascripts/extensions/app.templates.js"></script>
+    <script src="/javascripts/extensions/app.modal.js"></script>
+    <script src="/javascripts/extensions/app.notify.js"></script>
+    <script src="/javascripts/extensions/app.form.js"></script>
+    <script src="/javascripts/extensions/app.field.js"></script>
+    <script src="/javascripts/extensions/app.datepicker.js"></script>
+    <script src="/javascripts/extensions/app.number.js"></script>
+    <script src="/javascripts/extensions/app.auth.js"></script>
+	<script src="/javascripts/extensions/app.ui.js"></script>
+	<script src="/javascripts/extensions/app.ember.js"></script>
+    <!-- Sections-->
+
+    <!-- Initialize-->
+    <script src="/javascripts/init.js"></script>
+</body>
+</html>

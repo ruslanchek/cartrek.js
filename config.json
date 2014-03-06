@@ -1,6 +1,6 @@
 {
     "protocol": "http",
-    "domain_name": "control2.cartrek.ru",
+    "domain_name": "localhost",
     "port": 3000,
     "session_secret": "asdf324324234jkhsakd",
     "session_time": 36000000,

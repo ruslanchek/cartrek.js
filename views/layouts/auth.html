@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <title>{{ metadata.title }}</title>
+    <meta charset="utf-8"/>
+
+    <link href="/stylesheets/app.css" rel="stylesheet">
+</head>
+<body>
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- Libs -->
+    <script src="/javascripts/libs/jquery.min.js"></script>
+    <script src="/javascripts/libs/handlebars.min.js"></script>
+
+    <!-- Important! Do not change the order!-->
+    <script src="/javascripts/auth.js"></script>
+
+    <!-- App extensions-->
+    <script src="/javascripts/extensions/app.utils.js"></script>
+    <script src="/javascripts/extensions/app.loading.js"></script>
+    <script src="/javascripts/extensions/app.templates.js"></script>
+    <script src="/javascripts/extensions/app.form.js"></script>
+    <script src="/javascripts/extensions/app.auth.js"></script>
+
+    <!-- Initialize-->
+    <script src="/javascripts/auth.init.js"></script>
+</body>
+</html>
